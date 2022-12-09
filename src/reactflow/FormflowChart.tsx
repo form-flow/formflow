@@ -8,7 +8,16 @@ import useStore from './store';
 import { customNodeTypes } from './custom-nodes';
 import { customEdgeTypes } from './custom-edges';
 
-function FormflowChart(props: any) {
+export interface FormflowChartProps {
+  nodes?: Node[],
+  edges?: Edge[],
+  onNodeClick?: (node:Node, nodes: Node[], edges:Edge[]) => void,
+  onEdgeClick?: (edge:Edge, nodes: Node[], edges:Edge[]) => void,
+  onInit?: (instance: ReactFlowInstance) => void,
+}
+
+
+function FormflowChart(props: FormflowChartProps) {
   const {
     nodes,
     edges,

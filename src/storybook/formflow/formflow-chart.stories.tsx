@@ -2,12 +2,17 @@ import { ComponentMeta } from '@storybook/react';
 import * as React from 'react';
 import { useRef, useState } from 'react';
 import FormflowChartElement from "../../reactflow/formflow-chart-element";
+import CustomDocumentation from './formflow-chart.mdx';
 
 (!customElements.get('formflow-chart')) &&
   customElements.define('formflow-chart',FormflowChartElement)
 
 export default {
   title: 'Components/formflow-chart',
+  component: FormflowChartElement,
+  parameters: {
+    docs: { page: CustomDocumentation },
+  },
   argTypes: {
     data: { control: 'object' },
   }
