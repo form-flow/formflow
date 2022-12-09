@@ -1,0 +1,27 @@
+button {
+  border: 0;
+  border-radius: 12px; 
+  padding: 12px 16px;
+  cursor: pointer;
+
+  &.primary {
+    color: white;
+    background-color: blue;
+  }
+  &.secondary {
+    color: #333;
+    background-color: orange;
+  }
+  &.small {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+  &.medium {
+    font-size: 14px;
+    padding: 11px 20px;
+  }
+  &.large {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}

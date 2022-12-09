@@ -1,0 +1,11 @@
+. onConnect, custom edge is not used, but normal edges (fixed)
+. onDelete, there is an error (fixed)
+. undo/redo
+
+  .addNodeOn - node created/edge created
+  .addNodeBeside - node created/edge created
+  .onNodesChange - node remove
+
+  .onConnect - edge created
+  .onEdgesChange - edge removed
+  .onEdgeUpdate - edge updated
